@@ -1,0 +1,37 @@
+{
+  "name": "@depasquale/three-stats-mesh",
+  "version": "0.0.8",
+  "description": "Shows the Stats module as a mesh in a Three.js scene to monitor performance",
+  "author": "Anthony DePasquale (anthony@depasquale.org)",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DePasqualeOrg/three-stats-mesh"
+  },
+  "license": "MIT",
+  "main": "build/three-stats-mesh.js",
+  "files": [
+    "README.md",
+    "LICENSE.md",
+    "package.json",
+    "build",
+    "example"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "example": "node scripts/webserver.js"
+  },
+  "dependencies": {
+    "three": "^0.138.3"
+  },
+  "devDependencies": {
+    "@depasquale/eslint-config": "^0.0.4",
+    "@depasquale/three-wizard": "^0.0.8",
+    "@types/three": "^0.138.0",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "eslint": "^8.10.0",
+    "eslint-plugin-import": "^2.25.4",
+    "express": "^4.17.3"
+  }
+}
