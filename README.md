@@ -1,6 +1,6 @@
 # Three.js Stats Mesh
 
-This module allows you to place the Stats module in a Three.js scene to monitor performance. This is particularly useful in immersive (VR) situations, when DOM elements are not visible.
+This module allows you to place the [Stats](https://github.com/mrdoob/stats.js) indicator in a Three.js scene to monitor performance. This is particularly useful in immersive (VR) situations, when DOM elements are not visible.
 
 ### Installation
 
@@ -14,6 +14,9 @@ Create an instance and make any desired adjustments to the object's position, sc
 
 ```javascript
 import StatsMesh from '@depasquale/three-stats-mesh';
+
+// Set up the Three.js scene
+// ...
 
 const statsMesh = new StatsMesh();
 statsMesh.object.position.y = 1;
