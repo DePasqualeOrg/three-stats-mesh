@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import Wizard from '@depasquale/three-wizard';
-import StatsMesh from '../build/three-stats-mesh.js'; // npm: '@depasquale/three-stats-mesh'
+import StatsMesh from '@depasquale/three-stats-mesh';
 
 const wizard = new Wizard({
   controls: 'OrbitControls',
@@ -9,8 +9,8 @@ const wizard = new Wizard({
 const { scene } = wizard;
 
 // Lights
-const ambientLight = new THREE.AmbientLight(0xffffff, 1);
-const directionalLight = new THREE.DirectionalLight(0xffffff, 0.3);
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
+const directionalLight = new THREE.DirectionalLight(0xffffff, 0.4);
 directionalLight.position.set(0, 1, -1);
 scene.add(ambientLight, directionalLight);
 
@@ -20,6 +20,7 @@ const floorMaterial = new THREE.MeshStandardMaterial({
   color: 0x333333,
   metalness: 0.2,
   roughness: 0.4,
+  side: THREE.DoubleSide,
 });
 const floor = new THREE.Mesh(floorGeometry, floorMaterial);
 floor.rotation.x = -Math.PI / 2;
@@ -48,3 +49,12 @@ const render = () => {
 };
 
 wizard.start(render);
+
+// Show indicator while loading packages with import map
+document.onreadystatechange = () => {
+  if (document.readyState !== 'complete') {
+    document.querySelector('#loadingIndicator').style.visibility = 'visible';
+  } else {
+    document.querySelector('#loadingIndicator').style.display = 'none';
+  }
+};
