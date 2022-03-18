@@ -4,9 +4,14 @@ import StatsMesh from '@depasquale/three-stats-mesh';
 
 const wizard = new Wizard({
   controls: 'OrbitControls',
+  initialPosition: new THREE.Vector3(0, 1.6, 5),
 });
 
-const { scene } = wizard;
+const { scene, controls } = wizard;
+
+const icosahedronPosition = new THREE.Vector3(0, 1, 0);
+
+controls.target.copy(icosahedronPosition);
 
 // Lights
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
@@ -38,7 +43,7 @@ scene.add(statsMesh.object);
 const icosahedronGeometry = new THREE.IcosahedronGeometry(1, 0);
 const icosahedronMaterial = new THREE.MeshNormalMaterial();
 const icosahedron = new THREE.Mesh(icosahedronGeometry, icosahedronMaterial);
-icosahedron.position.y = 1;
+icosahedron.position.copy(icosahedronPosition);
 scene.add(icosahedron);
 
 const render = () => {
