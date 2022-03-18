@@ -1,6 +1,6 @@
 {
   "name": "@depasquale/three-stats-mesh",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Shows the Stats module as a mesh in a Three.js scene to monitor performance",
   "author": "Anthony DePasquale (anthony@depasquale.org)",
   "type": "module",
@@ -23,6 +23,7 @@
     "example": "node scripts/webserver.js"
   },
   "dependencies": {
+    "@depasquale/three-stats-mesh": "^0.0.11",
     "three": "^0.138.3"
   },
   "devDependencies": {
