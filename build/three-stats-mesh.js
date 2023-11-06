@@ -1,6 +1,6 @@
 /*!
 Three.js Stats Mesh
-Copyright 2022, Anthony DePasquale (anthony@depasquale.org)
+Copyright 2023, Anthony DePasquale
 */
 import * as THREE from 'three';
 import Stats from 'three/examples/jsm/libs/stats.module.js';

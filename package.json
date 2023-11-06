@@ -1,6 +1,6 @@
 {
   "name": "@depasquale/three-stats-mesh",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Shows the Stats module as a mesh in a Three.js scene to monitor performance",
   "author": "Anthony DePasquale (anthony@depasquale.org)",
   "type": "module",
@@ -23,18 +23,18 @@
     "example": "node scripts/webserver.js"
   },
   "dependencies": {
-    "@depasquale/three-stats-mesh": "^0.0.13",
-    "three": "^0.140.0"
+    "@depasquale/three-stats-mesh": "^0.0.14",
+    "three": "^0.158.0"
   },
   "devDependencies": {
-    "@depasquale/eslint-config-typescript": "^0.0.1",
-    "@depasquale/three-wizard": "^0.0.12",
-    "@types/three": "^0.140.0",
-    "@typescript-eslint/eslint-plugin": "^5.22.0",
-    "@typescript-eslint/parser": "^5.22.0",
-    "eslint": "^8.15.0",
-    "eslint-plugin-import": "^2.26.0",
-    "express": "^4.18.1",
-    "typescript": "^4.6.4"
+    "@depasquale/eslint-config-typescript": "^0.0.12",
+    "@depasquale/three-wizard": "^0.0.13",
+    "@types/three": "^0.158.1",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "eslint": "^8.53.0",
+    "eslint-plugin-import": "^2.29.0",
+    "express": "^4.18.2",
+    "typescript": "^5.2.2"
   }
 }
